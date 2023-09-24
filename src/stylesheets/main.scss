@@ -1,3 +1,165 @@
-/* Your styles go here */
 @import "bootstrap/scss/bootstrap.scss";
 @import "bootstrap-icons/font/bootstrap-icons.css";
+
+$primary-color: #1B3659;
+$secondary-color: #C7CFD9;
+$accent-color: #928853;
+$link-color: #4F607C;
+$text-color: #68593C;
+
+
+body {
+    background-color: $secondary-color;
+    font-family: 'Manrope', sans-serif;
+    color: $text-color;
+}
+
+.carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: #1B3659;
+    border-radius: 50%;
+  }
+
+  .btn {
+    background-color: $primary-color;
+    border: 1px solid#fff;
+    position: relative;
+    outline: none;
+    box-shadow: none;
+  }
+
+  .btn:hover {
+    background-color: $accent-color;
+  }
+
+  .link-primary, a {
+    color: $link-color;
+  }
+
+  .accordion-body, .accordion-button {
+    color: $text-color;
+    font-weight: 600;
+  }
+
+  .accordion-button:not(.collapsed) {
+    background-color: $accent-color; 
+    color: black; 
+  }
+
+  .hero {
+    padding-top: 100px;
+  }
+
+  .nav-link {
+    font-weight: 600;
+    font-size: larger;
+  }
+
+  .nav-image {
+    max-width: 200px;
+    height: auto;
+  }
+
+  /* Add this CSS to your stylesheet */
+.hero {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.hero-background img {
+  width: 100%;
+  height: auto;
+  object-fit: cover; 
+}
+
+.hero h1 {
+  color: #fff; 
+  font-size: 36px; 
+  margin-top: 0; 
+}
+
+.hero p {
+  color: #fff; 
+}
+
+.get-cash-header {
+  font-size: 64px;
+  color: #fff;
+  font-weight: 800;
+  background-color: #515968;
+  padding: .5em;
+  border-radius: 10%;
+}
+
+.money {
+  color: green;
+}
+
+.any-car {
+  padding-bottom: 1em;
+}
+
+.step-number {
+  font-weight: 800;
+  font-size: 40px;
+}
+
+.how-it-works-text {
+  font-size: 64px;
+}
+
+.adv {
+  font-weight: 800;
+}
+
+.adv-text-para {
+  font-size: 20px;
+}
+
+.adv-text {
+  font-size: 18px;
+}
+
+.btn:active::after {
+  content: "";
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.3); 
+  border-radius: 50%;
+  border: #fff;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  animation: ripple .4s linear;
+}
+
+.btn:focus {
+  background-color: $accent-color;
+  border: #fff;
+  box-shadow: none;
+}
+
+.btn:active {
+  transform: scale(0.9); 
+  background-color: #1B3659; 
+  border: 1px solid #1B3659; 
+}
+
+@keyframes ripple {
+  to {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+
+
